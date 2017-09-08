@@ -9,24 +9,24 @@
 import UIKit
 
 class ReviewViewController: UIViewController {
-
+  
   @IBOutlet var bgImageView: UIImageView!
   @IBOutlet var ratingStackView: UIStackView!
   var ratingSelected : String?
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-      let blurEffect = UIBlurEffect(style: .regular)
-      let blurEffectView = UIVisualEffectView(effect: blurEffect)
-      blurEffectView.frame = view.bounds
-      bgImageView.addSubview(blurEffectView)
-      
-      //Aplicando animación a la pantalla ratings
-      let scale = CGAffineTransform(scaleX: 0.0, y: 0.0)
-      let translation = CGAffineTransform(translationX: 0.0, y: 700.0)
-      
-      ratingStackView.transform = scale.concatenating(translation) // combinar escalado con traslación
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let blurEffect = UIBlurEffect(style: .regular)
+    let blurEffectView = UIVisualEffectView(effect: blurEffect)
+    blurEffectView.frame = view.bounds
+    bgImageView.addSubview(blurEffectView)
+    
+    //Aplicando animación a la pantalla ratings
+    let scale = CGAffineTransform(scaleX: 0.0, y: 0.0)
+    let translation = CGAffineTransform(translationX: 0.0, y: 700.0)
+    
+    ratingStackView.transform = scale.concatenating(translation) // combinar escalado con traslación
     
   }
   
@@ -35,12 +35,12 @@ class ReviewViewController: UIViewController {
     
     //usingSpringWithDampping
     
-//    UIView.animate(withDuration: 0.5, delay: 0.0, options: [], animations: { 
-//      
-////      self.ratingStackView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-//
-//   
-//    }, completion: nil)
+    //    UIView.animate(withDuration: 0.5, delay: 0.0, options: [], animations: {
+    //
+    ////      self.ratingStackView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+    //
+    //
+    //    }, completion: nil)
     
     
     UIView.animateKeyframes(withDuration: 0.9, delay: 0.0, options: .calculationModeCubic, animations: {
@@ -68,5 +68,5 @@ class ReviewViewController: UIViewController {
     }
     performSegue(withIdentifier: "unwindToDetailView", sender: sender)
   }
-
+  
 }

@@ -1,5 +1,5 @@
 //
-//  RecipeCell.swift
+//  PlaceCell.swift
 //  Recetas
 //
 //  Created by Juan Morillo on 8/6/17.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class RecipeCell: UITableViewCell {
+class PlaceCell: UITableViewCell {
   
-  @IBOutlet var imageRecipeCell: UIImageView!
-  @IBOutlet var titleRecipeLabel: UILabel!
+  @IBOutlet var imagePlaceCell: UIImageView!
+  @IBOutlet var titlePlaceLabel: UILabel!
   @IBOutlet var timeLabel: UILabel!
   
-  @IBOutlet var ingridientsLabel: UILabel!
+  @IBOutlet var placeLabel: UILabel!
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code

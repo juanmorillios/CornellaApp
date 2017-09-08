@@ -12,6 +12,14 @@
 		8702DD881EF9C383000D1C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8702DD861EF9C383000D1C2F /* Main.storyboard */; };
 		8702DD8A1EF9C383000D1C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8702DD891EF9C383000D1C2F /* Assets.xcassets */; };
 		8702DD8D1EF9C383000D1C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8702DD8B1EF9C383000D1C2F /* LaunchScreen.storyboard */; };
+		8702DD951EF9C5DE000D1C2F /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702DD941EF9C5DE000D1C2F /* PlaceCell.swift */; };
+		8702DD991EF9C663000D1C2F /* PlaceDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702DD961EF9C663000D1C2F /* PlaceDetailViewCell.swift */; };
+		8702DD9A1EF9C663000D1C2F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702DD971EF9C663000D1C2F /* DetailViewController.swift */; };
+		8702DD9B1EF9C663000D1C2F /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702DD981EF9C663000D1C2F /* ReviewViewController.swift */; };
+		8702DD9D1EF9C690000D1C2F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702DD9C1EF9C690000D1C2F /* Place.swift */; };
+		8702DDA01EFAC261000D1C2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8702DD9F1EFAC261000D1C2F /* MapKit.framework */; };
+		8702DDA21EFAC3BC000D1C2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702DDA11EFAC3BC000D1C2F /* MapViewController.swift */; };
+		878525F81F01A6E10095B62B /* AddPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,15 @@
 		8702DD891EF9C383000D1C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8702DD8C1EF9C383000D1C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8702DD8E1EF9C383000D1C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8702DD941EF9C5DE000D1C2F /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		8702DD961EF9C663000D1C2F /* PlaceDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewCell.swift; sourceTree = "<group>"; };
+		8702DD971EF9C663000D1C2F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8702DD981EF9C663000D1C2F /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		8702DD9C1EF9C690000D1C2F /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = ../Place.swift; sourceTree = "<group>"; };
+		8702DD9F1EFAC261000D1C2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8702DDA11EFAC3BC000D1C2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8702DDA31EFB22B6000D1C2F /* CornellaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CornellaApp.entitlements; sourceTree = "<group>"; };
+		878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8702DDA01EFAC261000D1C2F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +58,7 @@
 			children = (
 				8702DD811EF9C383000D1C2F /* CornellaApp */,
 				8702DD801EF9C383000D1C2F /* Products */,
+				8702DD9E1EFAC261000D1C2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,54 @@
 		8702DD811EF9C383000D1C2F /* CornellaApp */ = {
 			isa = PBXGroup;
 			children = (
-				8702DD821EF9C383000D1C2F /* AppDelegate.swift */,
-				8702DD841EF9C383000D1C2F /* ViewController.swift */,
-				8702DD861EF9C383000D1C2F /* Main.storyboard */,
+				87A5CC3B1F626B0300C13DC7 /* Model */,
+				87A5CC3C1F626B1F00C13DC7 /* Controller */,
+				87A5CC3D1F626B2E00C13DC7 /* View */,
 				8702DD891EF9C383000D1C2F /* Assets.xcassets */,
 				8702DD8B1EF9C383000D1C2F /* LaunchScreen.storyboard */,
 				8702DD8E1EF9C383000D1C2F /* Info.plist */,
 			);
 			path = CornellaApp;
+			sourceTree = "<group>";
+		};
+		8702DD9E1EFAC261000D1C2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8702DD9F1EFAC261000D1C2F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87A5CC3B1F626B0300C13DC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8702DDA31EFB22B6000D1C2F /* CornellaApp.entitlements */,
+				8702DD9C1EF9C690000D1C2F /* Place.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		87A5CC3C1F626B1F00C13DC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8702DD821EF9C383000D1C2F /* AppDelegate.swift */,
+				878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */,
+				8702DD961EF9C663000D1C2F /* PlaceDetailViewCell.swift */,
+				8702DD971EF9C663000D1C2F /* DetailViewController.swift */,
+				8702DD981EF9C663000D1C2F /* ReviewViewController.swift */,
+				8702DD841EF9C383000D1C2F /* ViewController.swift */,
+				8702DDA11EFAC3BC000D1C2F /* MapViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		87A5CC3D1F626B2E00C13DC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8702DD941EF9C5DE000D1C2F /* PlaceCell.swift */,
+				8702DD861EF9C383000D1C2F /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +157,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6ZJQ583HU9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -137,8 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8702DD951EF9C5DE000D1C2F /* PlaceCell.swift in Sources */,
 				8702DD851EF9C383000D1C2F /* ViewController.swift in Sources */,
+				8702DD9B1EF9C663000D1C2F /* ReviewViewController.swift in Sources */,
+				8702DD9A1EF9C663000D1C2F /* DetailViewController.swift in Sources */,
 				8702DD831EF9C383000D1C2F /* AppDelegate.swift in Sources */,
+				878525F81F01A6E10095B62B /* AddPlaceTableViewController.swift in Sources */,
+				8702DD9D1EF9C690000D1C2F /* Place.swift in Sources */,
+				8702DD991EF9C663000D1C2F /* PlaceDetailViewCell.swift in Sources */,
+				8702DDA21EFAC3BC000D1C2F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +378,7 @@
 				8702DD931EF9C383000D1C2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
