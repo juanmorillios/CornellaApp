@@ -20,6 +20,8 @@
 		8702DDA01EFAC261000D1C2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8702DD9F1EFAC261000D1C2F /* MapKit.framework */; };
 		8702DDA21EFAC3BC000D1C2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702DDA11EFAC3BC000D1C2F /* MapViewController.swift */; };
 		878525F81F01A6E10095B62B /* AddPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */; };
+		87C9B0231F68314900F29FE8 /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C9B0221F68314900F29FE8 /* AboutUs.storyboard */; };
+		87C9B0261F68317D00F29FE8 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C9B0241F68317D00F29FE8 /* Discover.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		8702DDA11EFAC3BC000D1C2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8702DDA31EFB22B6000D1C2F /* CornellaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CornellaApp.entitlements; sourceTree = "<group>"; };
 		878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceTableViewController.swift; sourceTree = "<group>"; };
+		87C9B0221F68314900F29FE8 /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
+		87C9B0251F68317D00F29FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		87A5CC3B1F626B0300C13DC7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8702DDA31EFB22B6000D1C2F /* CornellaApp.entitlements */,
 				8702DD9C1EF9C690000D1C2F /* Place.swift */,
+				8702DDA31EFB22B6000D1C2F /* CornellaApp.entitlements */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -119,6 +123,8 @@
 			children = (
 				8702DD941EF9C5DE000D1C2F /* PlaceCell.swift */,
 				8702DD861EF9C383000D1C2F /* Main.storyboard */,
+				87C9B0241F68317D00F29FE8 /* Discover.storyboard */,
+				87C9B0221F68314900F29FE8 /* AboutUs.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -191,7 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C9B0231F68314900F29FE8 /* AboutUs.storyboard in Resources */,
 				8702DD8D1EF9C383000D1C2F /* LaunchScreen.storyboard in Resources */,
+				87C9B0261F68317D00F29FE8 /* Discover.storyboard in Resources */,
 				8702DD8A1EF9C383000D1C2F /* Assets.xcassets in Resources */,
 				8702DD881EF9C383000D1C2F /* Main.storyboard in Resources */,
 			);
@@ -233,6 +241,14 @@
 				8702DD8C1EF9C383000D1C2F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		87C9B0241F68317D00F29FE8 /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87C9B0251F68317D00F29FE8 /* Base */,
+			);
+			name = Discover.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
