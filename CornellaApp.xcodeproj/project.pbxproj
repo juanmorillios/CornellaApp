@@ -22,6 +22,7 @@
 		878525F81F01A6E10095B62B /* AddPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */; };
 		87C9B0231F68314900F29FE8 /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C9B0221F68314900F29FE8 /* AboutUs.storyboard */; };
 		87C9B0261F68317D00F29FE8 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C9B0241F68317D00F29FE8 /* Discover.storyboard */; };
+		87C9B0281F68365C00F29FE8 /* AboutUsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9B0271F68365C00F29FE8 /* AboutUsTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceTableViewController.swift; sourceTree = "<group>"; };
 		87C9B0221F68314900F29FE8 /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
 		87C9B0251F68317D00F29FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		87C9B0271F68365C00F29FE8 /* AboutUsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				8702DD981EF9C663000D1C2F /* ReviewViewController.swift */,
 				8702DD841EF9C383000D1C2F /* ViewController.swift */,
 				8702DDA11EFAC3BC000D1C2F /* MapViewController.swift */,
+				87C9B0271F68365C00F29FE8 /* AboutUsTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8702DD951EF9C5DE000D1C2F /* PlaceCell.swift in Sources */,
+				87C9B0281F68365C00F29FE8 /* AboutUsTVC.swift in Sources */,
 				8702DD851EF9C383000D1C2F /* ViewController.swift in Sources */,
 				8702DD9B1EF9C663000D1C2F /* ReviewViewController.swift in Sources */,
 				8702DD9A1EF9C663000D1C2F /* DetailViewController.swift in Sources */,

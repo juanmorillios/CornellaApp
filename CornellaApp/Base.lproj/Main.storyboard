@@ -397,7 +397,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Add New Place" id="F6w-3S-kHr">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gVe-k0-NsX">
-                            <color key="tintColor" red="1" green="0.52904134989999996" blue="0.0080108819529999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="nyD-JQ-SVZ" kind="unwind" identifier="unwindSegueToMainView" unwindAction="unwindSegueToMainViewWithSegue:" id="N4D-pG-eI3"/>
                             </connections>
