@@ -71,11 +71,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="f3n-72-LHt" secondAttribute="height" multiplier="1:1" id="z8I-A6-qmt"/>
                                             </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="42"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6nX-Oh-njy">
                                             <rect key="frame" x="112" y="16" width="235" height="67.5"/>
