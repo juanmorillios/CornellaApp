@@ -12,7 +12,7 @@ class AboutUsTVC: UITableViewController {
   
   let sections = ["Dejar valoración", "Siguenos en redes sociales"]
   let sectionContent = [["Valorar en el App Store", "Déjanos tu feedback"], ["Facebook", "Twitter"]]
-  let sectionLinks = [["",""],
+  let sectionLinks = [["https://itunes.apple.com/es/app/fasttaps/id1153034861?mt=8",""],
                       ["https://facebook.com/juanmorillios", "https://twitter.com/juanmorillios"]]
   
   
@@ -52,6 +52,29 @@ class AboutUsTVC: UITableViewController {
   
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return self.sections[section]
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    switch indexPath.section {
+    case 0:
+      switch indexPath.row {
+      case 0:
+        if let appStoreURL = URL(string:self.sectionLinks[0][0])  {
+          let app = UIApplication.shared
+          if app.canOpenURL(appStoreURL) {
+            app.open(appStoreURL, options: [:], completionHandler: nil)
+          }
+        }
+      default:
+        break
+      }
+    default:
+      break
+    }
+    
+    
+    
   }
   
   /*
