@@ -23,6 +23,7 @@
 		87C9B0231F68314900F29FE8 /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C9B0221F68314900F29FE8 /* AboutUs.storyboard */; };
 		87C9B0261F68317D00F29FE8 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C9B0241F68317D00F29FE8 /* Discover.storyboard */; };
 		87C9B0281F68365C00F29FE8 /* AboutUsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9B0271F68365C00F29FE8 /* AboutUsTVC.swift */; };
+		87C9B02A1F690AB300F29FE8 /* AboutUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9B0291F690AB300F29FE8 /* AboutUS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		87C9B0221F68314900F29FE8 /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
 		87C9B0251F68317D00F29FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		87C9B0271F68365C00F29FE8 /* AboutUsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsTVC.swift; sourceTree = "<group>"; };
+		87C9B0291F690AB300F29FE8 /* AboutUS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				8702DD9C1EF9C690000D1C2F /* Place.swift */,
 				8702DDA31EFB22B6000D1C2F /* CornellaApp.entitlements */,
+				87C9B0291F690AB300F29FE8 /* AboutUS.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				8702DD951EF9C5DE000D1C2F /* PlaceCell.swift in Sources */,
 				87C9B0281F68365C00F29FE8 /* AboutUsTVC.swift in Sources */,
+				87C9B02A1F690AB300F29FE8 /* AboutUS.swift in Sources */,
 				8702DD851EF9C383000D1C2F /* ViewController.swift in Sources */,
 				8702DD9B1EF9C663000D1C2F /* ReviewViewController.swift in Sources */,
 				8702DD9A1EF9C663000D1C2F /* DetailViewController.swift in Sources */,

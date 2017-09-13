@@ -10,6 +10,9 @@ import UIKit
 
 class AboutUsTVC: UITableViewController {
   
+  //TODO: Falta implementar
+  var aboutUS : [AboutUS] = []
+  
   let sections = ["Dejar valoración", "Siguenos en redes sociales"]
   let sectionContent = [["Valorar en el App Store", "Déjanos tu feedback"], ["Facebook", "Twitter"]]
   let sectionLinks = [["https://itunes.apple.com/es/app/fasttaps/id1153034861?mt=8",""],
@@ -18,6 +21,9 @@ class AboutUsTVC: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    
+    
     
     self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     
