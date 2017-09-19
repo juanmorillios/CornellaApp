@@ -110,7 +110,7 @@
                                     <outlet property="imagePlaceCell" destination="f3n-72-LHt" id="pzg-4a-rkW"/>
                                     <outlet property="placeLabel" destination="Wgd-Ku-gfq" id="LUG-Ae-eP0"/>
                                     <outlet property="timeLabel" destination="otN-Gb-WZa" id="ECT-wM-Idy"/>
-                                    <outlet property="titlePlaceLabel" destination="cNA-tZ-qlZ" id="bTX-N3-JTk"/>
+                                    <outlet property="titlePlaceLabel" destination="cNA-tZ-qlZ" id="I3K-ZS-SX6"/>
                                     <segue destination="LuU-ta-hdx" kind="showDetail" identifier="ShowDetail" id="uIa-oe-JB6">
                                         <segue key="commit" inheritsFrom="parent" id="GsK-AO-jRO"/>
                                         <segue key="preview" inheritsFrom="commit" id="vad-20-Zz3"/>

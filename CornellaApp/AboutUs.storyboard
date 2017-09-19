@@ -46,10 +46,46 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Acerca de JuanMorillios" id="2oj-6Y-r1I"/>
+                    <connections>
+                        <segue destination="y5O-hs-4i7" kind="show" identifier="showWebView" id="Rtt-aB-d7g"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIB-gY-Q7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101.59999999999999" y="232.53373313343329"/>
+        </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="5ij-AR-Ufo">
+            <objects>
+                <viewController id="y5O-hs-4i7" customClass="WebViewVC" customModule="CornellaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Stt-Hn-x1w"/>
+                        <viewControllerLayoutGuide type="bottom" id="JkR-2s-pz9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VeE-OA-ayc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBU-N8-s0k">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JBU-N8-s0k" secondAttribute="trailing" id="DSM-Wg-S0y"/>
+                            <constraint firstItem="JBU-N8-s0k" firstAttribute="top" secondItem="Stt-Hn-x1w" secondAttribute="bottom" id="M11-UV-hCv"/>
+                            <constraint firstItem="JkR-2s-pz9" firstAttribute="top" secondItem="JBU-N8-s0k" secondAttribute="bottom" id="bNq-Bo-FDf"/>
+                            <constraint firstItem="JBU-N8-s0k" firstAttribute="leading" secondItem="VeE-OA-ayc" secondAttribute="leading" id="wGZ-M8-mwn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webViewAboutUS" destination="JBU-N8-s0k" id="iDa-pK-ezz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pn-1r-v91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="233"/>
         </scene>
         <!--Sobre Nosotros-->
         <scene sceneID="0tN-Wq-Mtw">

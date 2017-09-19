@@ -72,6 +72,11 @@ class AboutUsTVC: UITableViewController {
             app.open(appStoreURL, options: [:], completionHandler: nil)
           }
         }
+        
+      case 1:
+        performSegue(withIdentifier: "showWebView", sender: nil)
+        
+        
       default:
         break
       }
