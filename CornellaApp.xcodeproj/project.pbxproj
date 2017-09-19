@@ -44,7 +44,7 @@
 		8702DDA11EFAC3BC000D1C2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8702DDA31EFB22B6000D1C2F /* CornellaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CornellaApp.entitlements; sourceTree = "<group>"; };
 		878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceTableViewController.swift; sourceTree = "<group>"; };
-		87BE77FE1F71651A002EF9BC /* WebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		87BE77FE1F71651A002EF9BC /* WebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewVC.swift; path = ../WebViewVC.swift; sourceTree = "<group>"; };
 		87C9B0221F68314900F29FE8 /* AboutUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
 		87C9B0251F68317D00F29FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		87C9B0271F68365C00F29FE8 /* AboutUsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsTVC.swift; sourceTree = "<group>"; };
@@ -66,7 +66,6 @@
 		8702DD761EF9C383000D1C2F = {
 			isa = PBXGroup;
 			children = (
-				87BE77FE1F71651A002EF9BC /* WebViewVC.swift */,
 				8702DD811EF9C383000D1C2F /* CornellaApp */,
 				8702DD801EF9C383000D1C2F /* Products */,
 				8702DD9E1EFAC261000D1C2F /* Frameworks */,
@@ -115,6 +114,7 @@
 		87A5CC3C1F626B1F00C13DC7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				87BE77FE1F71651A002EF9BC /* WebViewVC.swift */,
 				8702DD821EF9C383000D1C2F /* AppDelegate.swift */,
 				878525F71F01A6E10095B62B /* AddPlaceTableViewController.swift */,
 				8702DD961EF9C663000D1C2F /* PlaceDetailViewCell.swift */,
