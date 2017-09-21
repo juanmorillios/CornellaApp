@@ -35,7 +35,11 @@ class ViewController: UITableViewController {
     place = Place(name: "Estadio del RCD Español ", type: "Estadio", location: "Av. Baix Llobregat, 100. 08940 Cornellà de Llobregat", image: #imageLiteral(resourceName: "EstadioRCDE"), telephone: "93 292 77 00", webSite: "https://www.rcdespanyol.com/es/instalaciones/")
     places.append(place)
     
-    place = Place(name: "Castillo de Cornellá", type: "Castillo", location: "C. Mossèn Jacint Verdaguer, s/n, 08940 Cornellà de Llobre, Barcelona", image: #imageLiteral(resourceName: "Castillo de Cornella"), telephone: "934 74 51 35", webSite: "http://www.castillosnet.org/espana/informacion.php?ref=B-CAS-162")
+    place = Place(name: "Castell de Cornellà", type: "Castillo", location: "C. Mossèn Jacint Verdaguer, s/n, 08940 Cornellà de Llobre, Barcelona", image: #imageLiteral(resourceName: "Castillo de Cornella"), telephone: "934 74 51 35", webSite: "http://www.castillosnet.org/espana/informacion.php?ref=B-CAS-162")
+    places.append(place)
+    
+    
+    place = Place(name: "Can Cuixart", type: "Monumento", location: "08940 Rambla Anselm Clavé, 18", image: #imageLiteral(resourceName: "CanCuxart"), telephone: "8568765875768", webSite: "www.cancuixart.com")
     places.append(place)
     
     navigationController?.hidesBarsOnSwipe = true
