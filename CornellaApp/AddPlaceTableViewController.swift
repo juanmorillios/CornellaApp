@@ -55,16 +55,13 @@ class AddPlaceTableViewController: UITableViewController, UIImagePickerControlle
       }
       
     }
-    
     tableView.deselectRow(at: indexPath, animated: true)
-    
   }
   
   func  imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     self.imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     self.imageView.contentMode = .scaleAspectFill
     self.imageView.clipsToBounds = true
-    
     
     //Aplicando Autolayout para ajustar la imagen a borde cero.
     let leadingConstrain = NSLayoutConstraint(item: self.imageView, attribute: .leading, relatedBy: .equal, toItem: self.imageView.superview, attribute: .leading, multiplier: 1, constant: 0)
@@ -84,12 +81,9 @@ class AddPlaceTableViewController: UITableViewController, UIImagePickerControlle
   }
   
   let defaultColor = UIColor(displayP3Red: 255.0/255.0, green: 135.0/255.0, blue: 2.0/255.0, alpha: 1.0)
-  
   let selectColor = UIColor(displayP3Red: 110.0/255.0, green: 175.0/255.0, blue: 38.0/255.0, alpha: 1.0)
   
-  
   @IBAction func btnRatingsPressed(_ sender: UIButton) {
-    
     switch sender.tag {
     case 1:
       self.rating = "dislike"
@@ -128,13 +122,10 @@ class AddPlaceTableViewController: UITableViewController, UIImagePickerControlle
       let place = Place(name: nombreLugar, type: tipoDeLugar, location: direccion, image: imagen, telephone: numeroTelefono, webSite: paginaWeb)
       place.rating = rating
       print(place.name)
-      
       self.performSegue(withIdentifier: "unwindSegueToMainView", sender: self)
       
     } else {
-      
       mensajeDeAlerta()
-      
     }
     
   }
@@ -142,11 +133,8 @@ class AddPlaceTableViewController: UITableViewController, UIImagePickerControlle
   func mensajeDeAlerta() {
     
     let alert = UIAlertController(title: "Aviso", message: "No puede dejar los campos vacios, por favor rellenarlo", preferredStyle: .alert)
-    
     let actionOK = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
-    
     alert.addAction(actionOK)
-    
     present(alert, animated: true, completion: nil)
     
   }

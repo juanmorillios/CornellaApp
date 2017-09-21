@@ -9,23 +9,23 @@
 import Foundation
 
 class AboutUS {
-
+  
   var sections: [String]?
   var sectionContent: [[String]]?
   var sectionLinks: [[String]]?
-
-  init(sections: [String]?, sectionContent: [[String]]?, sectionLinks: [[String]]? ) {
   
+  init(sections: [String]?, sectionContent: [[String]]?, sectionLinks: [[String]]? ) {
+    
     self.sections = sections
     self.sectionContent = sectionContent
     self.sectionLinks = sectionLinks
- 
+    
   }
- 
+  
 }
 
- var arrayAboutUS: [[AboutUS]] = []
- var obj1 = AboutUS(sections: ["Dejar valoración", "Siguenos en redes sociales"], sectionContent: [["Valorar en el App Store", "Déjanos tu feedback"], ["Facebook", "Twitter"]], sectionLinks: [["https://itunes.apple.com/es/app/fasttaps/id1153034861?mt=8",""],
+  var arrayAboutUS: [[AboutUS]] = []
+  var obj1 = AboutUS(sections: ["Dejar valoración", "Siguenos en redes sociales"], sectionContent: [["Valorar en el App Store", "Déjanos tu feedback"], ["Facebook", "Twitter"]], sectionLinks: [["https://itunes.apple.com/es/app/fasttaps/id1153034861?mt=8",""],
                                                                                                                                                                                                  ["https://facebook.com/juanmorillios", "https://twitter.com/juanmorillios"]])
 
 

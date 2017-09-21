@@ -45,9 +45,7 @@ extension DetailViewController: UITableViewDataSource {
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
-  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
     return 5
   }
   
@@ -81,10 +79,8 @@ extension DetailViewController: UITableViewDelegate {
     default:
       break
     }
-    
     return cell
   }
-  
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     switch indexPath.row {
@@ -96,8 +92,7 @@ extension DetailViewController: UITableViewDelegate {
       break
     }
   }
-  
-  
+
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.hidesBarsOnSwipe = false
@@ -107,13 +102,10 @@ extension DetailViewController: UITableViewDelegate {
   @IBAction func close(segue: UIStoryboardSegue) {
     
     if let reviewVC = segue.source as? ReviewViewController {
-      
       if let ratingN = reviewVC.ratingSelected {
         self.place.rating = ratingN
         let image = UIImage(named: self.place.rating)
-        
         self.ratingButton.setImage(image, for: .normal)
-        
       }
     }
   }
@@ -123,14 +115,11 @@ extension DetailViewController: UITableViewDelegate {
       
       let destination = segue.destination as? MapViewController
       destination?.place = self.place
-      
     }
   }
   
   override var prefersStatusBarHidden: Bool {
-    
     return true
-    
   }
   
 }

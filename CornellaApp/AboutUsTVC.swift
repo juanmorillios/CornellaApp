@@ -28,7 +28,7 @@ class AboutUsTVC: UITableViewController {
     super.viewDidLoad()
     self.tableView.tableFooterView = UIView(frame: CGRect.zero)
   }
- 
+  
   // MARK: - Table view data source
   
   override func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,14 +53,14 @@ class AboutUsTVC: UITableViewController {
     switch indexPath.section {
     case 0:
       switch indexPath.row {
-    case 0:
+      case 0:
         if let appStoreURL = URL(string:self.sectionLinks[0][0])  {
           let app = UIApplication.shared
           if app.canOpenURL(appStoreURL) {
             app.open(appStoreURL, options: [:], completionHandler: nil)
           }
         }
-    case 1:
+      case 1:
         performSegue(withIdentifier: "showWebView", sender: self.sectionLinks[0][1])
       default:
         break
